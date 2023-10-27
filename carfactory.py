@@ -13,7 +13,7 @@ class CarFactory:
         return Car(CapuletEngine(last_service_mileage,current_mileage), NubbinBattery(last_service_date, current_date))
 
     def create_palindrome(self, current_date, last_service_date, warning_light_on):
-        return Car(SternmanEngine(last_service_date, warning_light_on), SpindlerBattery(last_service_date, current_date))
+        return Car(SternmanEngine(warning_light_on), SpindlerBattery(last_service_date, current_date))
 
     def create_glissade(self, current_date, last_service_date, current_mileage, last_service_mileage):
         return Car(WilloughbyEngine(last_service_mileage,current_mileage), SpindlerBattery(last_service_date, current_date))
